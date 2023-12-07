@@ -13,10 +13,12 @@ describe('PostsService', () => {
   });
 
   it('should add a new post', () => {
-    // реализуйте тест-кейс
+    const newPost = postsService.create(post);
+    expect(postsService.find(newPost.id)).toEqual(post)
   });
 
   it('should find a post', () => {
-    // реализуйте тест-кейс
+    const newPost = postsService.create(post);
+    expect(postsService.find(newPost.id)).toEqual(post)
   });
 });
